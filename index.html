@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+    <link rel="stylesheet" href="style.css" type="text/css" />
+</head>
+<body>
+
+    <!---------------- Navbar -------------->
+
+    <nav>
+        <a href="#pro1">Lorem Epsum</a>
+        <a href="#pro2">Slider</a>
+        <a href="#pro3">Form Validation</a>
+        <a href="#pro4">Css Property</a>
+        <a href="#pro5">Search Food</a>
+        <a href="#pro6">To-Do-App</a>
+        <a href="#pro7">Review</a>
+        <a href="#pro8">Accordien</a>
+    </nav>
+
+    <!------------ Lorem Epsum ------------->
+
+    <div class="main" id="pro1">
+        <h4>Lorem Dummy Text</h4>
+        <div class="underLine"></div>
+        <div class="cooseText">
+            <h5>Type No Of Paragraph</h5>
+            <input type="number" class="noOfPara">
+            <button class="btn">Submit</button>
+        </div>
+        <div class="showpPara"></div>
+    </div>
+
+
+    <!------------ Slider -------------->
+
+    
+    <div class="main" id="pro2">
+        <h4>Slide Show</h4>
+        <div class="underLine"></div>
+        <div class="carousel">
+            <div class="slide">
+                <img src="imgage/img1.jpg" alt="img1">
+            </div>
+            <div class="slide">
+               <img src="imgage/img5.jpg" alt="img1">
+            </div>
+            <div class="slide">
+               <img src="imgage/travel.jpg" alt="img1">
+            </div>
+            <div class="slide">
+               <img src="imgage/travel.jpg" alt="img1">
+            </div>
+            <div class="slide">
+               <img src="imgage/travel.jpg" alt="img1">
+            </div>
+            <div class="slide">
+               <img src="imgage/travel.jpg" alt="img1">
+            </div>
+        </div>
+        <div class="btns">
+            <button class="btn prev">Prev</button>
+            <button class="btn next">Next</button>
+        </div>
+    </div>
+
+
+    <!--------------------- Form Validation ----------------->
+
+    <div class="main" id="pro3">
+        <h4>Form Validation</h4>
+        <div class="underLine"></div>
+        <div class="container">
+            <form action="#" onsubmit="return validation()">
+                <div class="form-group">
+                    <lable>Username : </lable>
+                    <input type="text" name="" id="username" autocomplete="off">
+                    <div class="msg"><span id="usermsg"> </span></div>
+                </div>
+                <div class="form-group">
+                    <lable>Password : </lable>
+                    <input type="text" name="" id="password" autocomplete="off">
+                    <div class="msg"><span id="passmsg"> </span></div>
+                </div>
+                <div class="form-group">
+                    <lable>Re-enter password : </lable>
+                    <input type="text" name="" id="re-password" autocomplete="off">
+                    <div class="msg"><span id="repassmsg"> </span></div>
+                </div>
+                <div class="form-group">
+                    <lable>Mobile : </lable>
+                    <input type="number" name="" id="mobile" autocomplete="off">
+                    <div class="msg"><span id="mobmsg"> </span></div>
+                </div>
+                <div class="form-group">
+                    <lable>E-mail : </lable>
+                    <input type="mail" name="" id="mail" autocomplete="off">
+                    <div class="msg"><span id="mailmsg"> </span></div>
+                </div>
+                <input type="submit" name="submit" value="Submit">
+            </form>
+        </div>
+    </div>
+
+    <!--------------------- Css Property -------------->
+
+    <div class="main" id="pro4">
+        <h4>Css properties</h4>
+        <div class="underLine"></div>
+        <div class="cssProMain">
+            <div class="navigation">
+                <div class="alfa"></div>
+                <div class="incDec">
+                    <span onclick="counter('decrement')"> < </span>
+                    <span onclick="counter('increment')"> > </span>
+                </div>
+                <div class="no"> <p class="count"></p> </div>
+            </div>
+            <div class="showProperty"></div>
+        </div>
+    </div>
+
+
+    <!--------------------- Search Food -------------------->
+
+    <div class="main" id="pro5">
+        <h4>Filter Food</h4>
+        <div class="underLine"></div>
+        <div class="filterFood">
+            <div class="menuBtns">
+                <button class="btns" data-id="all">All</button>
+                <button class="btns" data-id="fruit">Fruit</button>
+                <button class="btns" data-id="vegitable">Vegitable</button>
+                <button class="btns" data-id="Shack">Shack</button>
+            </div>
+            <div class="menuItem">
+            </div>
+        </div>
+    </div>
+
+
+    <!--------------------- To-Do-List -------------------->
+
+    
+    <div class="main" id="pro6">
+        <h4>To-Do-App</h4>
+        <div class="underLine"></div>
+        <div class="toDo">
+            <div class="toDomain">
+                <form id="fom">
+                <input type="text" id="input" autocomplete="off" placeholder="type your ToDo ...">
+                <ul id="list"></ul>
+            </form>
+                <p>Left click to complete & double click to remove</p>
+            </div>
+        </div>
+    </div>
+    
+    <!---------------------- Review -------------------------->
+
+    <div class="main" id="pro7">
+        <h4>Reviews</h4>
+        <div class="underLine"></div>
+        <h5>Our Reviews</h5>
+        <div class="ourReview">
+            <div class="img">
+                <img src="" alt="myimages" id="myimg">
+                <h3 id="userName"></h3>
+                <h2 id="userJob"></h2>
+            </div>
+           
+            <div class="content">
+                <p id="userMsg"></p>
+                <button id="randomUser">Random User</button>
+            </div>
+            <div class="controler">
+                <p id="decre"><</p>
+                <p id="incre">></p>
+            </div>
+        </div>
+    </div>
+
+    <!------------------------ Accordien ---------------------->
+
+    <div class="main" id="pro8">
+        <h4>Accordian</h4>
+        <div class="underLine"></div>
+        <div class="accord">
+            <div class="mainn">
+                <div class="title listone">
+                    This is lorem epsom text
+                </div>
+                <div id="a">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptatibus tempora quaerat alias, labore ipsum dolore nam aliquam odio adipisci? alias, labore ipsum dolore nam aliquam odio adipisci? adipisicing elit. Illo voluptatibus tempora quaerat alias, labore ipsum dolore.
+                </div>
+            </div>
+            <div class="mainn">
+                <div class="title listtwo">
+                    This is lorem epsom text
+                </div>
+                <div id="b">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptatibus tempora quaerat alias, labore ipsum dolore nam aliquam odio adipisci? alias, labore ipsum dolore nam aliquam odio adipisci?alias, labore ipsum dolore nam aliquam odio adipisci.
+                </div>
+            </div>
+            <div class="mainn">
+                <div class="title listthree">
+                    This is lorem epsom text
+                </div>
+                <div id="c">
+                    Lorem ipsum dolor sit amet consectetur, adipisicing elit. Illo voluptatibus tempora quaerat alias, labore ipsum dolore nam aliquam odio adipisci? alias, labore ipsum dolore nam aliquam odio adipisci?alias, labore ipsum dolore nam aliquam odio adipisci?alias.
+                </div>
+            </div>
+          
+        </div>
+    </div>
+    
+    <div class="btnToTop" onclick="toTop()"><i class="fas fa-arrow-up"></i></div>
+
+    <script src="index.js"></script>
+</body>
+</html>

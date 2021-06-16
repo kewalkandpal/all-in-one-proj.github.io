@@ -1,0 +1,767 @@
+*{
+    margin:0;
+    padding:0;
+    box-sizing: border-box;
+}
+body{
+    background-color: #eee;
+    scroll-behavior: smooth;
+}
+
+/************** Navbar ******************/
+
+nav{
+    width:100%;
+    height:auto;
+    padding:15px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    flex-wrap: wrap;
+    background-color: rgb(77, 184, 233);
+}
+nav a{
+    text-decoration: none;
+    color:white;
+    font-size: 20px;
+    transition: 0.3s;
+    text-transform: capitalize;
+    margin:15px;
+}
+nav a:hover{
+    color:rgb(88, 12, 228);
+}
+
+/***************  Lorem Epsum  ************************/
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:50px auto;
+}
+.main h4{
+    text-align: center;
+    font-size: 30px;
+}
+.main .underLine{
+    width:200px;
+    height:3px;
+    background-color: blue;
+    margin:2px auto;
+}
+.main .cooseText{
+    margin-top: 10px;
+    width:800px;
+    height:100px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.main .cooseText h5{
+   font-size: 20px;
+   margin-top: 0;
+}
+.main .cooseText input{
+    padding:5px 20px;
+    width:80px;
+    margin:0px 20px;
+    font-size: 18px;
+}
+.main .cooseText button{
+    padding:5px 20px;
+    font-size: 18px;
+    cursor: pointer;
+}
+.main .showpPara{
+    width:600px;
+    height:auto;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+    flex-direction: column;
+    flex-wrap: wrap;
+    margin-top: 40px;
+}
+
+
+/****************** Slider ***************/
+
+.main{
+    width:100%;
+    height:auto;
+    padding: 10px;
+}
+.main h4{
+    text-align: center;
+    font-size: 30px;
+}
+.main .underLine{
+    width:100px;
+    height:3px;
+    background-color: blue;
+    margin:2px auto;
+}
+.carousel{
+    position: relative;
+    margin:0 auto;
+    width:80vw;
+    height:450px;
+    border: 1px solid black;
+    margin-top: 20px;
+    overflow: hidden;
+}
+.carousel .slide{
+    position: absolute;
+    width:100%;
+    height:100%;
+    transition: all 0.5s ease-in-out;
+}
+.carousel .slide img{
+    width:100%;
+    height:100%;
+    object-fit: cover;
+}
+
+.btns{
+    margin-top: 10px;
+    display: flex;
+    justify-content: center;
+}
+.btns .btn{
+    margin-left: 5px;
+    padding:10px 20px;
+    cursor: pointer;
+}
+
+/******************** Form Validation *************************/
+
+.main{
+    width:100%;
+    height:auto;
+    padding: 10px;
+    margin-top: 35px;
+    display:flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+.main h4{
+    text-align: center;
+    font-size: 30px;
+}
+.main .underLine{
+    width:160px;
+    height:3px;
+    background-color: blue;
+    margin:2px auto;
+}
+.container
+{
+	width:450px;
+	height:auto;
+    margin-top: 30px;
+	background: rgb(158, 187, 240);
+	padding:20px;
+	display:flex;
+	justify-content: center;
+	flex-direction: column;
+	border-radius:15px;
+}
+.container .form-group input
+{
+	width:100%;
+	padding:5px;
+	outline: none;
+	border:none;
+	background: transparent;
+	border-bottom: 1px solid rgb(113, 12, 245);
+	margin-bottom:5px;
+	color:white;
+
+}
+
+.container .form-group input[type="text"]
+{
+	font-size: 16px;
+	color:white;
+}
+
+.container .form-group label
+{   
+	display: block;
+	font-size:18px;
+	color:#fff;
+	margin-bottom:5px;
+}
+.container .form-group .msg
+{
+     width:100%;
+     height:10px;
+     margin-bottom:5px;
+     text-align: center;
+}
+.container .form-group span
+{   
+   
+	color:red;
+}
+
+.container input[type="submit"]
+{  
+    margin-top: 10px;
+	padding:10px 30px;
+	border-radius:10px;
+	border:none;
+    cursor: pointer;
+}
+.container input[type="submit"]:focus
+{
+	border:none;
+	outline: none;
+}
+.container input[type="submit"]:hover
+{
+    background-color: rgb(34, 149, 226);
+    color:white;
+}
+
+
+/*************************  Css Property *******************/
+
+.main{
+    width:100%;
+    height:auto;
+    padding: 10px;
+    margin-top: 35px;
+    display:flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+.main h4{
+    text-align: center;
+    font-size: 30px;
+}
+.main .underLine{
+    width:150px;
+    height:3px;
+    background-color: blue;
+    margin:2px auto;
+}
+.cssProMain{
+    width:100%;
+    height:auto;
+    margin-top: 35px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+.cssProMain .navigation{
+    width:100%;
+    height:auto;
+    padding: 20px 0px;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-image: linear-gradient(315deg, #d4418e 0%, #0652c5 74%);color:white;
+}
+.navigation .alfa{
+    font-size: 50px;
+    user-select: none;
+    color:white;
+}
+
+.navigation .no p{
+    font-size: 50px;
+    user-select: none;
+    color:white;
+}
+.navigation .incDec span{
+    font-size: 30px;
+    margin-left: 15px;
+    cursor: pointer;
+    transition: 0.5s;
+    user-select: none;
+    color:white;
+}
+.navigation .incDec span:hover{
+    color: rgb(0, 247, 255);
+}
+
+.showProperty{
+    width:90%;
+    height: 250px;
+    overflow-y: auto;
+    margin-top: 30px;
+    border: 2px solid #2a2a72;
+    padding: 40px 100px;
+    display: grid;
+    grid-template-columns : repeat(3, 1fr);
+    background-image: linear-gradient(315deg, #2a2a72 0%, #009ffd 74%);
+    color:white;
+    line-height: 30px;
+    font-size: 20px;
+}
+
+/********************** Filter Food **************************/
+
+.main{
+    width:100%;
+    height:auto;
+    padding: 10px;
+    margin-top: 40px;
+    display:flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+.main h4{
+    text-align: center;
+    font-size: 30px;
+}
+.main .underLine{
+    width:100px;
+    height:3px;
+    background-color: blue;
+    margin:2px auto;
+}
+.filterFood{
+    margin-top:20px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+   flex-direction: column;
+   height:auto;
+  }
+.filterFood .menuBtns{
+  display: flex;
+  flex-wrap: wrap;
+}
+  .filterFood .menuBtns button{
+      padding:10px 20px;
+      cursor:pointer;
+      margin-left: 5px;
+  }
+  .filterFood .menuItem{
+      margin-top: 15px;
+      display:flex;
+      justify-content: center;
+      align-items: center;
+      flex-wrap: wrap;
+      height:auto;
+  }
+  .filterFood .menuItem .content{
+      display:flex;
+      justify-content: space-between;
+      width:500px;
+      height:150px;
+      border: 1px solid black;
+      border-radius: 5px;
+      margin:5px;
+  }
+  .filterFood .menuItem .content .image{
+      width:250px;
+      height:100%;
+  }
+  .filterFood .menuItem .content .image img{
+      width:100%;
+      height:100%;
+      background-size: cover;
+      background-position: 100% 100%;
+      border-radius: 5px;
+  }
+  .filterFood .menuItem .content .aboutImage{
+      margin-left:10px;
+      width:250px;
+      display:flex;
+      justify-content: flex-start;
+      flex-direction: column;
+  }
+  .filterFood .menuItem .content p{
+      text-align: left;
+      margin-top: 10px;
+  }
+
+  /********************* To-Do-List ************************/
+
+  .main{
+    width:100%;
+    height:auto;
+    padding: 10px;
+    margin-top: 40px;
+    display:flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+.main h4{
+    text-align: center;
+    font-size: 30px;
+}
+.main .underLine{
+    width:100px;
+    height:3px;
+    background-color: blue;
+    margin:2px auto;
+}
+.toDo{
+    width:350px;
+    height: 350px;
+    margin-top: 20px;
+    border-radius: 10px;
+    background-color: rgb(110, 206, 251);
+    display:flex;
+    justify-content: center;
+    align-items: center;
+}
+.toDo .toDomain{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction:column;
+    width:400px;
+    height:auto;
+    padding:10px;
+}
+.toDo .toDomain #fom{
+    margin-top: 20px;
+}
+.toDo .toDomain input{
+    padding:10px;
+    width:200px;
+}
+.toDo .toDomain input{
+    color:#333;
+}
+.toDo .toDomain p{
+    margin-top: 20px;
+    color:white;
+}
+#list{
+    margin-top: 20px;
+    height:150px;
+    overflow-y: auto;
+}
+#list li{
+    width:200px;
+    padding:5px 13px;
+    margin-top: 2px;
+    list-style: none;
+    border-bottom: 1px solid black;
+    cursor:pointer;
+    user-select: none;
+    background-color:white;
+   
+}
+#list li.cut{
+    text-decoration: line-through;
+    color:#d5d5d5;
+}
+
+/******************* Review ****************************/
+
+.main{
+    width:100%;
+    height:auto;
+    padding: 10px;
+    margin-top: 40px;
+    display:flex;
+	justify-content: center;
+    align-items: center;
+	flex-direction: column;
+}
+.main h4{
+    text-align: center;
+    font-size: 30px;
+}
+.main .underLine{
+    width:70px;
+    height:3px;
+    background-color: blue;
+    margin:2px auto;
+}
+.main h5{
+    text-align: center;
+    font-size: 25px;
+    margin-top: 35px;
+    margin-bottom: 5px;
+}
+.ourReview{
+    width:400px;
+    height:auto;
+    padding:10px;
+    border:1px solid black;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.7),
+    3px 3px 4px rgba(0,0,0,0.8);
+    background-color: white;
+    border-radius:10px;
+               
+}
+.line{
+    width:100px;
+    height:2px;
+    background-color: black;
+    margin-bottom: 25px;
+}
+.ourReview .img{
+    text-align: center;
+}
+.ourReview .img img{
+    width:130px;
+    height:130px;
+    border-radius: 50%;
+    background-size: cover;
+    background-position: 100% 100%;
+    border-right: 8px solid skyblue;
+    /* border-top-right-radius: 50%; */
+            
+}
+.ourReview .controler{
+    width:250px;
+   display:flex;
+   justify-content: center;
+   align-items: center;
+    margin:auto;
+}
+.ourReview .controler p{
+    padding: 5px;
+   font-size: 25px;
+   color:skyblue;
+   cursor: pointer;
+   margin:10px;
+   user-select: none;
+}
+.ourReview .controler p:hover{
+    text-shadow: 0px 0px 2px blue;
+}
+.ourReview .content{
+    margin-top: 5px;
+    text-align: center;
+}
+.ourReview .content button{
+    padding:10px 30px;
+    margin-top: 10px;
+    border-radius: 10px;
+    border:none;
+    outline: none;
+    cursor: pointer;
+    background-color: skyblue;
+}
+.ourReview .content button:hover{
+    background-color: steelblue;
+    border:none;
+    outline: none;
+    color:white;
+}
+ h3 , h2{
+ letter-spacing: 2px;
+}
+ h2{
+    color:skyblue;
+}
+
+
+/************************ Accordien *******************/
+
+.main{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    margin:50px auto;
+}
+.main h4{
+    text-align: center;
+    font-size: 30px;
+}
+.main .underLine{
+    width:90px;
+    height:3px;
+    background-color: blue;
+    margin:2px auto;
+}
+.accord{
+    margin-top: 35px;
+    width:500px;
+    height: auto;
+    overflow: hidden;
+}
+.accord .mainn{
+    width: 100%;
+    margin: 5px auto;
+    overflow: hidden;
+}
+
+.accord .mainn .title{
+    width:100%;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: blueviolet;
+    padding:10px;
+    cursor: pointer;
+    color:white;
+}
+
+#a , #b , #c{
+    width:100%;
+    height:0px;
+    transition: 0.5s;
+    overflow: hidden;
+    padding:2px 10px;
+}
+#a.active ,#b.active, #c.active{
+    width:100%;
+    height:100px;
+    padding:5px 10px;
+    background-color: white;
+}
+
+
+/**************** Btn-To-Top **************/
+
+.btnToTop{
+    position: fixed;
+    bottom:30px;
+    right:40px;
+    width:50px;
+    height:50px;
+    border-radius: 50%;
+    background-color: blue;
+    display: none;
+    cursor: pointer;
+}
+.btnToTop .fas{
+    width:100%;
+    height:100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    color:white;
+    font-size: 22px;
+}
+
+
+/*********************** Responsive Code ***********************/
+
+@media screen and (max-width:576px){
+
+    /***************  Lorem Epsum  ************************/
+ .main h4{
+     font-size: 25px;
+ }
+ .main .cooseText{
+    width:400px;  
+}
+.main .cooseText{
+   font-size: 18px;
+}
+.main .cooseText input{
+    padding:2px 10px;
+    width:70px;
+    margin:0px 5px;
+}
+.main .cooseText button{
+    padding:2px 10px;
+}
+.main .showpPara{
+    width:300px;
+    margin-top: 20px;
+}
+
+    /******************** Form Validation *************************/
+
+ .container{
+    width:300px;
+ }
+
+ /*************************  Css Property *******************/
+
+ .navigation .alfa{
+    font-size: 40px;
+  
+}
+
+.navigation .no p{
+    font-size: 40px;
+
+}
+.navigation .incDec span{
+    font-size: 25px;
+
+}
+.navigation .incDec span:hover{
+    color: rgb(0, 247, 255);
+}
+
+.showProperty{
+    width:100%;
+    height: 250px;
+    grid-template-columns : repeat(1, 1fr);
+    font-size: 18px;
+    padding:10px 20px;
+}
+
+/********************** Filter Food **************************/
+
+.filterFood .menuItem{
+    margin-top: 15px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    height:auto;
+}
+.filterFood .menuItem .content{
+    display:flex;
+    justify-content: space-between;
+    width:300px;
+    height:180px;
+    border: 1px solid black;
+    border-radius: 5px;
+    margin:5px;
+}
+.filterFood .menuItem .content .image{
+    width:150px;
+}
+
+  /********************* To-Do-List ************************/
+
+  .toDo{
+    width:300px;
+}
+
+/******************* Review ****************************/
+
+.main h5{
+    margin-top: 30px;
+}
+.ourReview{
+    width:300px;
+    margin-top: 10px;
+    box-shadow: 0px 0px 3px rgba(0,0,0,0.7),
+              
+}
+
+/************************ Accordien *******************/
+.accord{
+    width:300px;
+}
+#a.active ,#b.active, #c.active{
+    height:150px;
+    padding:5px 10px;
+}
+
+/********************** Btn to Top ******************/
+.btnToTop{
+    width:38px;
+    height:38px;
+}
+
+}
+
