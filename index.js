@@ -78,14 +78,6 @@ function slider(){
 
 ////////////////////////// Form Validation ///////////////////////
 
-function validation(){
-
-    var user = document.getElementById("username").value;
-    var password = document.getElementById("password").value;
-    var repassword = document.getElementById("re-password").value;
-    var mobile = document.getElementById("mobile").value;
-    var mail = document.getElementById("mail").value;
-
     if(user==""){
         setTimeout(()=>{
             document.getElementById("usermsg").innerHTML="please fill the username.";
