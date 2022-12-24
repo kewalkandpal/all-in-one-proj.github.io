@@ -75,7 +75,128 @@ function slider(){
     });
 };
 
+
+////////////////////////// Form Validation ///////////////////////
+
+function validation(){
+
+    if(user==""){
+        setTimeout(()=>{
+            document.getElementById("usermsg").innerHTML="please fill the username.";
+        },100)
+         setTimeout(()=>{
+            document.getElementById("usermsg").innerHTML="";
+        },2000)
+        return false;
+    }
+    if(user.length <=2 || user.length >20){
+             setTimeout(()=>{
+                document.getElementById("usermsg").innerHTML="Name is invalid. ";
+        },100)
+         setTimeout(()=>{
+            document.getElementById("usermsg").innerHTML="";
+        },2000)
+      
+        return false;
+    }
+    if(!isNaN(user)){
+        setTimeout(()=>{
+            document.getElementById("usermsg").innerHTML="Name is invalid. ";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("usermsg").innerHTML="";
+    },2000)
+        return false;
+    }
+
+    if(password==""){
+        setTimeout(()=>{
+            document.getElementById("passmsg").innerHTML="please fill the password.";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("passmsg").innerHTML="";
+    },2000)
+       
+        return false;
+    }
+
+    if(password.length < 5 || password.length >= 15){
+        setTimeout(()=>{
+            document.getElementById("passmsg").innerHTML="Password must be 5 characters.";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("passmsg").innerHTML="";
+    },2000)
+       
+        return false;
+    }
+    if(repassword !== password){
+        setTimeout(()=>{
+            document.getElementById("repassmsg").innerHTML="Password not matching please re-enter.";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("repassmsg").innerHTML="";
+    },2000)
+       
+        return false;
+    }
+
+    if(mobile==""){
+        setTimeout(()=>{
+            document.getElementById("mobmsg").innerHTML="please fill the phone number.";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("mobmsg").innerHTML="";
+    },2000)
+       
+        return false;
+    }
+
+    if(mobile.length!=10){
+        setTimeout(()=>{
+            document.getElementById("mobmsg").innerHTML="invalid phone no.";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("mobmsg").innerHTML="";
+    },2000)
+        
+        return false;
+    }
+
+    if(mail==""){
+        setTimeout(()=>{
+            document.getElementById("mailmsg").innerHTML="please fill the e-mail.";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("mailmsg").innerHTML="";
+    },2000)
+        
+        return false;
+    }
+    if(mail.indexOf("@") <=0){
+        setTimeout(()=>{
+            document.getElementById("mailmsg").innerHTML="Invalid e-mail.";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("mailmsg").innerHTML="";
+    },2000)
+        
+        return false;
+    }
+if(mail.charAt(mail.length -4)!="." && mail.charAt(mail.length-3)!="."){
+    setTimeout(()=>{
+        document.getElementById("mailmsg").innerHTML="Invalid e-mail.";
+    },100)
+    setTimeout(()=>{
+        document.getElementById("mailmsg").innerHTML="";
+    },2000)
+       
+        return false;
+    }
+}
+
 /////////////////////// Css Property /////////////////////
+
 
 let counting = 1;
 let countLetter = 65;
