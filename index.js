@@ -78,6 +78,8 @@ function slider(){
 
 ////////////////////////// Form Validation ///////////////////////
 
+function validation(){
+
     if(user==""){
         setTimeout(()=>{
             document.getElementById("usermsg").innerHTML="please fill the username.";
